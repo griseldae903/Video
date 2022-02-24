@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Login</title>
+    <link href="estiloss.css" rel="stylesheet">
+  
+    
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+
+    <script>
+        $(function () {
+            $('#abrir').click(abrirAlerta)
+            $('.alerta button').click(cerrarAlerta)
+
+        })
+
+        function abrirAlerta() {
+            $('.alerta').slideDown()
+        }
+
+        function cerrarAlerta() {
+            $('.alerta').slideUp()
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <h2>Nuestro Contenido</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolorum nemo autem id debitis cupiditate
+            nostrum delectus suscipit fugiat fuga velit, perferendis hic ab aperiam aut pariatur, recusandae natus
+            ratione.</p>
+
+            <div class="alerta">
+                <p>
+                    Este es un alerta, cuidado
+                </p>
+                <button>Cerrar</button>
+
+            </div>
+
+            <button id="abrir">Abrir alerta</button>
+    </main>
+</body>
+
+</html>
